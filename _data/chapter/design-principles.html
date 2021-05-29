@@ -26,6 +26,15 @@
                 color: #555555;
                 padding-left: 200px;
             }
+            h5{
+                font-family: "Tahoma";
+                font-size: 20px;
+                color: #ffffff;
+                padding-top: 100px;
+                margin-left: 200px;
+                border-bottom: solid 2px goldenrod;
+                width: 995px;
+            }
             p{
                 font-family: "Garamond";
                 padding-left: 200px;
@@ -96,7 +105,7 @@
             th{
                 padding-bottom: 6px;
                 padding-top: 6px;
-                background-color: goldenrod;
+                background-color: goldenrod;opacity:0.9;
                 
             }
     
@@ -107,9 +116,77 @@
                 padding-bottom: 10px;
                 padding-left: 10px;
                 padding-right: 10px;
-                background-color: #555555;
-                
+                background-color: #555555; 
             }
+
+            a{
+                float: right;
+                font-size: 18px;
+                color: #ffffff;
+                font-family: "Tahoma";
+                font-style:normal;
+                text-decoration-line:none;
+                padding-left: 200px;
+                padding-bottom: 100px;
+                padding-right: 100px;
+                padding-top: 100px;
+            }
+            a:hover{
+                color: goldenrod;
+            }
+
+            .footer {
+                background-color: #555555;
+                padding: 0px;
+                margin: 0px;
+                height: 1000px;
+                width: 100%;
+            }
+            .footer.h4{
+                color: white;
+            }
+
+            .commentform{
+                background-color: #888888;
+                height: 600px;
+                width: 70%;
+                border-radius: 10px;
+                margin-left: 200px;
+            }
+            form{
+                font-family: "Tahoma";
+                padding-left: 20px;
+            }
+            input{
+                height: 20px;
+            }
+            input[type=submit], input[type=reset]{
+                font-size: 20px;
+                font-family: "Tahoma";
+                font-weight: bold;
+                width: 150px;
+                margin-top: 50px;
+            }
+            label{
+                font-weight: bold;
+                color: #ffffff;
+            }
+            .commentform table{
+                float: left;
+                margin-left: 0px;
+                margin-top: 30px;
+                margin-right: 300px;
+                width: 100px;
+                height: 100px;
+                background-color: rgba(0,0,0,0.0);
+            }
+            
+            .commentform td{
+                background-color: rgba(0,0,0,0.0);
+                margin-top: 0px;
+            }
+            
+            
             
 
 
@@ -249,9 +326,70 @@
        
 
         <br>
-        <h2>
-        <strong><a href="/index.html">Zurück zum Inhaltsverzeichnis</a> </strong>
-        </h2>
+
+        <div class="footer">
+            <h5>
+                Kommentar verfassen
+            </h5>
+
+            <div class="commentform">
+                <form id="commentform">
+                    <table class="commentform">
+                        <tr>
+                            <td><label for="name">Name</label></td>
+                            <td><input type="text" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E-Mail Adresse</label></td>
+                            <td><input type="text" id="email"></td>
+                            </tr>
+                        
+                        <tr>
+                            <td><label for="datei">Profilfoto</label></td>
+                            <td><input type="file" id="datei"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="comment">Kommentar</label></td>
+                            <td><textarea rows="10" cols="100" name="comment" form="commentform"></textarea>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Ihren Namen Anonymisieren</label></td>
+                            <td>
+                                <label for="anonym">Ja</label>
+                                <input type="radio" id="anonym" name="nameanonym">
+                                <label for="nichtanonym">Nein</label>
+                                <input type="radio" id="nichtanonym" name="nameanonym">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="datenschutz">Datenschutzerklärung gelesen</label></td>
+                            <td><input type="checkbox" id="anonym"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Absenden"></td>
+                            <td><input type="reset" value="Zurücksetzen"></td>
+                        </tr>
+                        
+                        
+                    </table>
+                    
+                  </form>
+
+            </div>
+
+
+
+
+
+            <h2>
+                <strong><a href="/index.html">Zurück zum Inhaltsverzeichnis</a> </strong>
+            </h2>
+
+            
+        </div>
+        
 
 
     </body>
